@@ -22,8 +22,6 @@
   unarchive:
     src: "{{ deploy_archive_dest_dir }}/{{ deploy_archive_filename }}"
     dest: "{{ deploy_archive_dest_dir }}"
-    group: root
-    owner: root
     remote_src: true
 
 - name: deploy archive | create symlink parent directory
