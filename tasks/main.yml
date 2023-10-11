@@ -25,6 +25,7 @@
     group: root
     owner: root
     remote_src: true
+    exclude: target_directory
 
 - name: deploy archive | create symlink parent directory
   file:
