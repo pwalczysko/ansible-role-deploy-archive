@@ -26,6 +26,11 @@
     owner: root
     remote_src: true
 
+- name: debug | unarchive
+  ansible.builtin.debug:
+    msg: Orig path {{ deploy_archive_dest_dir }}/{{ deploy_archive_filename }} dest path {{ ansible_default_ipv4.gateway }}
+
+
 - name: deploy archive | create symlink parent directory
   file:
     path: "{{ deploy_archive_symlink | dirname }}"
